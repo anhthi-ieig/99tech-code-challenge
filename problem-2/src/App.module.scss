@@ -1,0 +1,36 @@
+body {
+  font-family: "Exo 2";
+  background: linear-gradient(45deg, #0e0e2a, #1a2644);
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.app-container {
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .form-container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--usy-color-white);
+    margin-top: calc(-1 * var(--usy-spacing-64px));
+    border: 1px solid #ccc;
+    border-radius: var(--usy-spacing-6px);
+    padding: var(--usy-spacing-24px) var(--usy-spacing-20px)
+      var(--usy-spacing-32px);
+    animation: fadeUp 0.5s ease-out forwards;
+  }
+}
