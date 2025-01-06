@@ -105,7 +105,7 @@ function App() {
                 placeholder="Enter amount"
                 description={error?.message}
                 hasError={Boolean(error?.message)}
-                transformOnChange={(value) => formatCurrency(value)}
+                transformOnBlur={(value) => formatCurrency(value)}
                 hasAsterisk
               />
             )}
